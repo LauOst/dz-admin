@@ -1,0 +1,36 @@
+// 全局SCSS变量
+
+:root {
+  // sidebar
+  --menuBg: #293241;
+  --menuText: #bfcbd9;
+  --menuActiveText: #00958e;
+  --menuHover: rgba(0, 0, 0, 0.15);
+  --subMenuBg: rgba(0, 0, 0, 0.15);
+  --subMenuActiveText: #f4f4f5;
+  --subMenuHover: rgba(0, 0, 0, 0.25);
+  //--el-bg-color: #f0f2f5;
+  /* 自定义分割线颜色 */
+  --dz-divider-color-grey: #f0f0f0;
+  /* 自定义表格头部背景颜色 */
+  --dz-table-color-light: #e1e1e1;
+  --dz-hover-color: rgba(0, 0, 0, 0.05);
+
+  // theme
+  //--el-color-primary: #00958e;
+  //--el-color-success: #4caf50;
+  //--el-color-warning: #fb8c00;
+  //--el-color-danger: #ff5252;
+}
+
+$menuBg: var(--menuBg);
+$menuText: var(--menuText);
+$menuActiveText: var(--menuActiveText);
+$menuHover: var(--menuHover);
+
+$subMenuBg: var(--subMenuBg);
+$subMenuActiveText: var(--subMenuActiveText);
+$subMenuHover: var(--subMenuHover);
+
+$sideBarWidth: 230px;
+$bg-color: blue;

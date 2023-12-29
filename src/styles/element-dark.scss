@@ -1,0 +1,65 @@
+@forward "node_modules/element-plus/theme-chalk/src/dark/var.scss" with (
+  $colors:(
+           //这里定义在暗黑模式下 primary 的颜色，其他同理
+          "primary": ("base": #00958e),
+  )
+
+);
+
+
+@use "node_modules/element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+
+html.dark {
+    /* 自定义深色背景颜色 */
+    --el-bg-color: #252b32;
+    --el-bg-color-page: #22272;
+    --el-fill-color-light: #353c42;
+    /* 自定义input框等颜色 */
+    --el-border-color: rgba(255, 255, 255, 0.15);
+    --el-border-color-light: rgba(255, 255, 255, 0.15);
+    /* 自定义表格边框颜色 */
+    --el-border-color-lighter: #464B50;
+    /* 自定义表格头部背景颜色 */
+    --dz-table-color-light: #353c42;
+    /* 自定义sidebar深色背景颜色 */
+    --el-bg-color-overlay: #21272e;
+    /* 自定义分割线颜色 */
+    --dz-divider-color-grey: #8D9095;
+    --dz-hover-color: rgba(249, 250, 251, 0.08);
+
+
+  --menuBg: var(--el-bg-color-overlay);
+  --menuText: #fff;
+  --menuActiveText: var(--el-menu-active-color);
+  --menuHover: rgb(0 0 0 / 20%);
+  --subMenuBg: var(--el-menu-bg-color);
+  --subMenuActiveText: var(--el-menu-active-color);
+  --subMenuHover: rgb(0 0 0 / 20%);
+    /* 自定义主体深色背景颜色 */
+    //.main-container {
+    //  background: #2E323F;
+    //}
+  .navbar {
+    background-color: var(--el-bg-color);
+
+    .setting-container .setting-item:hover {
+      background: var(--el-fill-color-light);
+    }
+  }
+
+
+  .right-panel-btn {
+    background-color: var(--el-color-primary-dark);
+  }
+
+  .svg-icon,
+  svg {
+    fill: var(--el-text-color-regular);
+  }
+
+  .sidebar-container {
+    .el-menu-item.is-active .svg-icon {
+      fill: var(--el-color-primary);
+    }
+  }
+}
